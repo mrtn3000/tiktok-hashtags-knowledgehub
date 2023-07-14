@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "node-json-db": "^2.2.0",
-    "pupeteer": "^0.0.1"
+    "pupeteer": "^0.0.0"
   }
 }
