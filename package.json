@@ -1,15 +1,28 @@
 {
-  "name": "knowledge_hub",
-  "version": "1.0.0",
+  "name": "tiktok-hashtags-knowledgehub",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "asynckit": "^0.4.0",
+    "axios": "^1.4.0",
+    "combined-stream": "^1.0.8",
+    "delayed-stream": "^1.0.0",
+    "follow-redirects": "^1.15.2",
+    "form-data": "^4.0.0",
+    "mime-db": "^1.52.0",
+    "mime-types": "^2.1.35",
+    "node-json-db": "^2.2.0",
+    "proxy-from-env": "^1.1.0",
+    "puppeteer": "^21.1.0",
+    "rwlock": "^5.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "node-json-db": "^2.2.0",
-    "pupeteer": "^0.0.0"
-  }
+  "author": "Martin Degeling",
+  "license": "LGPL-3.0-or-later"
 }

@@ -8,7 +8,8 @@
 
 ## The javascript part
 * install [nodejs](https://nodejs.org/en) and [google chrome browser](https://www.google.com/chrome/)
-* setup scraping environment:``npm install`
+* setup scraping environment: `npm install`
 * edit `scrape_tiktok_withDB.js` and edit the installation path of chrome
+* when Chrome is installed you can check chrome://version/ in your browser to find the "exectuable path"
 * run scraper `node scrape_tiktok_withDB.js`
 * start jupyter to analyse the data `cd .. && jupyter lab`

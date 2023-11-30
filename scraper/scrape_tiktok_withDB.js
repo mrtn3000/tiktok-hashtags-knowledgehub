@@ -10,7 +10,12 @@ async function saveVideo(videodata){
         console.log(videodata.id + " already in DB")
     } catch(error) {
         console.log(videodata.id + " not yet in DB")
-        await videos.push("/"+videodata.id, videodata)
+        data = {
+          id: videodata.id,
+          textExtra: videodata.textExtra,
+          stats: videodata.stats
+        }
+        await videos.push("/"+videodata.id, data)
     }    
 }
 
@@ -22,6 +27,8 @@ async function run() {
     args: ["--window-size=1920,1080"]
   });
   const page = await browser.newPage();
+  // increase timeouts
+  page.setDefaultNavigationTimeout(60000);
 
   await page.setRequestInterception(true);
   page.on('request', (request) => request.continue())
